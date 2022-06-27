@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { getPokemonData, getPokemons, searchPokemon } from "./api";
 import "./App.css";
-
+import Navbar from "./components/Navbar";
+import Pokedex from "./components/Pokedex";
+import Searchbar from "./components/Searchbar";
+import { FavoriteProvider } from "./contexts/favoritesContext";
 
 const favoritesKey = "f"
 function App() {
@@ -85,7 +88,7 @@ function App() {
         <Navbar />
         <Searchbar onSearch={onSearchHandler}/>
         {notFound ? (
-          <div class-name="not-found-text"> No se encotro el pokemon </div>
+          <div class-name="not-found-text">No se encontro el pokemon</div>
         ) : 
         (<Pokedex
           pokemons={pokemons}
