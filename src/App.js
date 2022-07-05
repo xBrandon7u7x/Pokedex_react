@@ -86,7 +86,7 @@ function App() {
       }}
     >
       <div>
-      <h2 className="pokemon-card"><Link to= "/datosalumno">Matricula del alumno</Link></h2>
+      <h2 className="pokemon-card"><Link to= "/datosalumno">Datos de alumno</Link></h2>
 <Outlet/>
         <Navbar />
         <Searchbar onSearch={onSearchHandler}/>
