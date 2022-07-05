@@ -9,11 +9,11 @@ import Datosalumno from './routes/datos2';
 
 ReactDOM.render(
   <React.StrictMode>
-     <BrowserRouter>
-<Routes>
+    <BrowserRouter>
+    <Routes>
   <Route path= "/" element= {<App />}>
     <Route path= "/datosalumno" element={<Datosalumno/>} >
-      <Route path= ":datos2" element= {<Datos2/>}/>
+      <Route path= ":datos2Datosalumno" element= {<Datos2/>}/>
       </Route>
   </Route>
 </Routes>
