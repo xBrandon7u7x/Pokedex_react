@@ -4,7 +4,7 @@
 
 body{
   background-image: url("pokemon.jpg");
-  background-size: 1500px;
+  background-size: cover;
 }
 
 nav {

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Pokedex from "./components/Pokedex";
 import Searchbar from "./components/Searchbar";
 import { FavoriteProvider } from "./contexts/favoritesContext";
+import {Link, Outlet} from 'react-router-dom';
 
 const favoritesKey = "f"
 function App() {
@@ -85,6 +86,8 @@ function App() {
       }}
     >
       <div>
+      <h2 className="pokemon-card"><Link to= "/datosalumno">Matricula del alumno</Link></h2>
+<Outlet/>
         <Navbar />
         <Searchbar onSearch={onSearchHandler}/>
         {notFound ? (
